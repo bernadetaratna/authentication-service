@@ -1,0 +1,25 @@
+INSERT INTO roles (
+    role_id,
+    role_name,
+    is_active,
+    is_deleted
+)
+VALUES
+    (
+        'b774d1d3-a560-470e-8587-a01ffa874252',
+        'USER',
+        TRUE,
+        FALSE
+    ),
+    (
+        'a124d1d3-a560-470e-8587-a01ffa874253',
+        'ADMIN',
+        TRUE,
+        FALSE
+    ),
+    (
+        'c234d1d3-a560-470e-8587-a01ffa874254',
+        'SUPER_ADMIN',
+        TRUE,
+        FALSE
+    );
