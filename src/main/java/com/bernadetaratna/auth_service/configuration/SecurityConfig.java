@@ -32,6 +32,12 @@ public class SecurityConfig {
                                 "/api/authentication/user/refresh/token"
                         ).permitAll()
                         .requestMatchers(
+                                "/swagger-ui.html",
+                                "/swagger-ui/**",
+                                "/v3/api-docs/**",
+                                "/v3/api-docs.yaml"
+                        ).permitAll()
+                        .requestMatchers(
                                 "/api/authentication/user/logout"
                         ).authenticated()
                         .anyRequest().authenticated()
