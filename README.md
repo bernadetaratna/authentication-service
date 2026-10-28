@@ -35,7 +35,9 @@ The application follows a layered architecture to separate responsibilities:
 - **Security:** Handles JWT authentication and request security.
 - **Configuration:** Defines application and exception-handling configuration.
 
-## Prerequisites
+## Getting Started
+
+### 1. Prerequisites
 
 Before running the application, make sure you have:
 
@@ -43,6 +45,11 @@ Before running the application, make sure you have:
 - Maven, or use the included Maven Wrapper
 - Docker
 - PostgreSQL 17, or a compatible PostgreSQL instance
+
+### 2. Clone the Project
+
+git clone https://github.com/bernadetaratna/authentication-service.git
+cd authentication-service
 
 ## Configuration
 
@@ -63,13 +70,7 @@ Refer to `.env.example` for the expected variable names and example values.
 
 1. Start a PostgreSQL instance and create the application database.
 2. Configure the required environment variables in your IDE run configuration or shell.
-3. Run the application using the Maven Wrapper:
-
-   ```bash
-   ./mvnw spring-boot:run
-   ```
-
-   Alternatively, open the project in IntelliJ IDEA and run `AuthServiceApplication`.
+3. Run the application
 
 Flyway applies the database migrations during application startup. Hibernate validates the database schema against the entity mappings.
 
